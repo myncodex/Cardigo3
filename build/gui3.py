@@ -15,7 +15,7 @@ connection = obd.OBD(port)
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\User\Desktop\New folder\build\assets\frame3")
+ASSETS_PATH = OUTPUT_PATH / Path(r"/home/pi/Desktop/Cardigo3/build/assets/frame3")
 
 
 def relative_to_assets(path: str) -> Path:
