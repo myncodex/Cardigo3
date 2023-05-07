@@ -30,20 +30,20 @@ port = "COM20"
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\User\Desktop\New folder\build\assets\frame2")
+ASSETS_PATH = OUTPUT_PATH / Path(r"/home/pi/Desktop/Cardigo3/build/assets/frame2")
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 def openwindow2():
     window.destroy()
-    path_to_script ="C:/Users/User/Desktop/New folder/build/gui1.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/gui1.py"
     subprocess.run(["python", path_to_script])
     
 
 def openwindow():
     window.destroy()
-    path_to_script ="C:/Users/User/Desktop/New folder/build/gui1.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/gui1.py"
     subprocess.run(["python", path_to_script])
     
 
