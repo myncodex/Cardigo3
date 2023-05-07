@@ -22,7 +22,7 @@ file_loc={'license':'1vpKvhCZsmsgAv_9PwePx8ZDgkBXojqsv','pollution':'1_T9T_A8bmj
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\User\Desktop\New folder\build\assets\docv")
+ASSETS_PATH = OUTPUT_PATH / Path(r"/home/pi/Desktop/Cardigo3/build/assets/docv")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -30,7 +30,7 @@ def relative_to_assets(path: str) -> Path:
 
 def openback():
     window.destroy()
-    path_to_script ="C:/Users/User/Desktop/New folder/build/gui1.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/gui1.py"
     subprocess.run(["python", path_to_script])
 
 def download(name):
@@ -42,23 +42,23 @@ def download(name):
 
 def license():
     download('license')
-    path_to_script ="C:/Users/User/Desktop/New folder/build/image1.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/image1.py"
     subprocess.run(["python", path_to_script])
 
 
 def pollution():
     download('pollution')
-    path_to_script ="C:/Users/User/Desktop/New folder/build/image1.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/image1.py"
     subprocess.run(["python", path_to_script])
 
 def rc():
     download('rc')
-    path_to_script ="C:/Users/User/Desktop/New folder/build/image1.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/image1.py"
     subprocess.run(["python", path_to_script])
 
 def insurance():
     download('insurance')
-    path_to_script ="C:/Users/User/Desktop/New folder/build/image1.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/image1.py"
     subprocess.run(["python", path_to_script])
 
 
