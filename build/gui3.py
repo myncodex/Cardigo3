@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 import obd
 
 port = "COM20"
-connection = obd.OBD(port)
+connection = obd.OBD(bluetooth_addr='AA:BB:CC:11:22:33')
 
 
 OUTPUT_PATH = Path(__file__).parent
