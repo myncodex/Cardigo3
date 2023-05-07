@@ -12,7 +12,7 @@ import subprocess
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\User\Desktop\New folder\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"/home/pi/Desktop/Cardigo3/build/assets/frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -26,7 +26,7 @@ window.geometry("800x480")
 window.configure(bg = "#FFFFFF")
 def openwindow():
     window.destroy()
-    path_to_script ="C:/Users/User/Desktop/New folder/build/gui1.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/gui1.py"
     subprocess.run(["python", path_to_script])
     
 
