@@ -21,7 +21,7 @@ class MainWindow1(QMainWindow):
         button = QPushButton(self, clicked= lambda:self.closing())
         button.setGeometry(QRect(14,25,40,40))
         button.setStyleSheet("background-color:#ffffff")
-        button.setIcon(QtGui.QIcon("C:/Users/User/Desktop/New folder/build/assets/frame3/button_9.png"))
+        button.setIcon(QtGui.QIcon("/home/pi/Desktop/Cardigo3/build/assets/frame3/button_9.png"))
         button.setIconSize(QtCore.QSize(40,40))
         
 if __name__=="__main__":
