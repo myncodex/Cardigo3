@@ -14,46 +14,46 @@ import subprocess
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\User\Desktop\New folder\build\assets\frame1")
+ASSETS_PATH = OUTPUT_PATH / Path(r"/home/pi/Desktop/Cardigo3/build/assets/frame1")
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
 def openbrowser():    
-    path_to_script ="C:/Users/User/Desktop/New folder/build/WebBrowser.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/WebBrowser.py"
     subprocess.run(["python", path_to_script])
 
 def openyoutube():    
-    path_to_script ="C:/Users/User/Desktop/New folder/build/youtube.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/youtube.py"
     subprocess.run(["python", path_to_script])
 
 def openspotify():
-    path_to_script ="C:/Users/User/Desktop/New folder/build/spotify.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/spotify.py"
     subprocess.run(["python", path_to_script])
 
 def openmaps():
-    path_to_script ="C:/Users/User/Desktop/New folder/build/maps.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/maps.py"
     subprocess.run(["python", path_to_script])
 
 def opennetflix():
-    path_to_script ="C:/Users/User/Desktop/New folder/build/netflix.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/netflix.py"
     subprocess.run(["python", path_to_script])
 
 def opendrive():
-    path_to_script ="C:/Users/User/Desktop/New folder/build/drive.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/drive.py"
     subprocess.run(["python", path_to_script])
 def opendiagnostics():
-    path_to_script ="C:/Users/User/Desktop/New folder/build/gui3.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/gui3.py"
     subprocess.run(["python", path_to_script])
 def openmenu():
     window2.destroy()
-    path_to_script ="C:/Users/User/Desktop/New folder/build/gui.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3//build/gui.py"
     subprocess.run(["python", path_to_script])
 
 def opendoc():
     window2.destroy()
-    path_to_script ="C:/Users/User/Desktop/New folder/build/docv.py"
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/docv.py"
     subprocess.run(["python", path_to_script])
 
 
