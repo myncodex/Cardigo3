@@ -9,12 +9,12 @@ import glob
 root = Tk()
 root.geometry("1024x600")
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\User\Desktop\New folder\build\assets\frame1")
+ASSETS_PATH = OUTPUT_PATH / Path(r"/home/pi/Desktop/Cardigo3/build\assets\frame1")
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
 def deleter():
-    path=glob.glob('C:/Users/User/Desktop/New folder/build/*.jpg')
+    path=glob.glob('/home/pi/Desktop/Cardigo3/build/*.jpg')
     for file in path:
         if os.path.isfile(file):
             os.remove(file)
