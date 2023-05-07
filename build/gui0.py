@@ -144,7 +144,7 @@ button_3 = Button(
 
 
 
-connection = obd.OBD(port)
+connection = obd.OBD(bluetooth_addr='AA:BB:CC:11:22:33')
 
 flag = 0
 canvas.pack()
