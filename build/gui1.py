@@ -56,6 +56,11 @@ def opendoc():
     path_to_script ="/home/pi/Desktop/Cardigo3/build/docv.py"
     subprocess.run(["python", path_to_script])
 
+def openiot():
+    window2.destroy()
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/iot.py"
+    subprocess.run(["python", path_to_script])
+
 
 
 
@@ -178,7 +183,7 @@ button_6 = Button(
     image=button_image_6,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_6 clicked"),
+    command=lambda: openiot(),
     relief="flat"
 )
 button_6.place(
