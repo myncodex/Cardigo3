@@ -66,6 +66,23 @@ image_2 = canvas.create_image(
     image=image_image_2
 )
 
+canvas.place(x = 0, y = 0)
+button_image_01 = PhotoImage(
+    file=relative_to_assets("button_1.png"))
+button_01 = Button(
+    image=button_image_01,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: openback(),
+    relief="flat"
+)
+button_01.place(
+    x=24.0,
+    y=39.0,
+    width=45.0,
+    height=41.0
+)
+
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
 button_1 = Button(
