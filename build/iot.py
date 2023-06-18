@@ -27,6 +27,11 @@ def turnoff():
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
+def openback():
+    window.destroy()
+    path_to_script ="/home/pi/Desktop/Cardigo3/build/gui1.py"
+    subprocess.run(["python", path_to_script])
+
 
 window = Tk()
 
