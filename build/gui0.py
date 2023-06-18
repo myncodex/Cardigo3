@@ -5,6 +5,7 @@
 
 from pathlib import Path
 import time
+import RPi.GPIO as GPIO
 import subprocess
 import concurrent.futures
 # from tkinter import *
@@ -27,6 +28,9 @@ def verify(name):
         return 1
 
 port = "COM20"
+GPIO.setmode(GPIO.BCM)
+pin_number = 2
+GPIO.setup(pin_number, GPIO.OUT)
 
 
 OUTPUT_PATH = Path(__file__).parent
@@ -43,6 +47,7 @@ def openwindow2():
 
 def openwindow():
     window.destroy()
+    GPIO.output(pin_number, GPIO.HIGH)
     path_to_script ="/home/pi/Desktop/Cardigo3/build/gui1.py"
     subprocess.run(["python", path_to_script])
     
